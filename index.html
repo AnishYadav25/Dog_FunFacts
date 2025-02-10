@@ -4,64 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Fun Facts</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #4CAF50;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #e8f5e9;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Fun Facts About Dogs</h1>
         <ul id="facts-list"></ul>
     </div>
-    <script>
-        const dogFacts = [
-            "Dogs have a sense of time and can predict future events, such as regular walk times.",
-            "A dog's sense of smell is at least 40 times better than a human's.",
-            "Dogs have been our companions for over 14,000 years.",
-            "The Basenji dog is known as the 'barkless dog' because it doesn't bark like other dogs.",
-            "Dogs can understand up to 250 words and gestures."
-        ];
-
-        window.onload = function() {
-            const factsList = document.getElementById('facts-list');
-            dogFacts.forEach(fact => {
-                const listItem = document.createElement('li');
-                listItem.textContent = fact;
-                factsList.appendChild(listItem);
-            });
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
