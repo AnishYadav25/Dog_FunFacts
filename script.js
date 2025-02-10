@@ -6,11 +6,8 @@ const dogFacts = [
     "Dogs can understand up to 250 words and gestures."
 ];
 
-window.onload = function() {
-    const factsList = document.getElementById('facts-list');
-    dogFacts.forEach(fact => {
-        const listItem = document.createElement('li');
-        listItem.textContent = fact;
-        factsList.appendChild(listItem);
-    });
-};
+function showRandomFact() {
+    const randomIndex = Math.floor(Math.random() * dogFacts.length);
+    const factElement = document.getElementById('fact');
+    factElement.textContent = dogFacts[randomIndex];
+}
